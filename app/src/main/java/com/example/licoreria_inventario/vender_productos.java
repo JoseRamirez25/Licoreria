@@ -139,7 +139,7 @@ public class vender_productos extends AppCompatActivity {
     }
     //   llenado de recycleViews
     public void llenarInventario(String search){
-        String URL = "http://192.168.0.16/LicoreriaDB/obtener_inventario_vender.php";
+        String URL = "http://localhost/LicoreriaDB/obtener_inventario_vender.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -194,7 +194,7 @@ public class vender_productos extends AppCompatActivity {
 
     }
     public void vender(int id, int cantidad, int precio){
-        String URL = "http://192.168.0.16/LicoreriaDB/vender.php";
+        String URL = "http://localhost/LicoreriaDB/vender.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

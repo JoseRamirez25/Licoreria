@@ -79,7 +79,7 @@ public class RegistrarProducto extends AppCompatActivity {
     }
 
     public void llenarProveedores(){
-        String URL = "http://192.168.0.16/LicoreriaDB/obtener_proveedores.php";
+        String URL = "http://localhost/LicoreriaDB/obtener_proveedores.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -123,7 +123,7 @@ public class RegistrarProducto extends AppCompatActivity {
 
     }
     public void registrarP(String nombreP,int cantP, int precio, int tamañoP,int gradosAl,String descripcionP,String proveedoresid){
-        String URL = "http://192.168.0.16/LicoreriaDB/agregar_producto.php";
+        String URL = "http://localhost/LicoreriaDB/agregar_producto.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

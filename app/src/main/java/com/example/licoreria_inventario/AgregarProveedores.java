@@ -51,7 +51,7 @@ public class AgregarProveedores extends AppCompatActivity {
                 id = Eid.getText().toString();
                 telefono = Etelefono.getText().toString();
                 nombre = Enombre.getText().toString();
-                URL = "http://192.168.0.16/LicoreriaDB/agregar_proveedor.php";
+                URL = "http://localhost/LicoreriaDB/agregar_proveedor.php";
                 StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

@@ -36,7 +36,7 @@ Button login;
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                autenticarUsuario("http://192.168.0.16/LicoreriaDB/autenticar_usuario.php");
+                autenticarUsuario("http://localhost/LicoreriaDB/autenticar_usuario.php");
             }
         });
 

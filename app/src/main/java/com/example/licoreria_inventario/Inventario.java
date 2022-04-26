@@ -537,7 +537,7 @@ TextView total;
     }
 //   llenado de recycleViews
     public void llenarInventario(String busqueda){
-        String URL = "http://192.168.0.16/LicoreriaDB/obtener_inventario.php";
+        String URL = "http://localhost/LicoreriaDB/obtener_inventario.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -585,7 +585,7 @@ TextView total;
 
     }
     public void llenarProveedores(String busqueda){
-        String URL = "http://192.168.0.16/LicoreriaDB/obtener_proveedores.php";
+        String URL = "http://localhost/LicoreriaDB/obtener_proveedores.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -626,7 +626,7 @@ TextView total;
 
     }
     public void llenarVentas(int op, String limiteIn, String limiteS){
-        String URL = "http://192.168.0.16/LicoreriaDB/obtener_ventas.php";
+        String URL = "http://localhost/LicoreriaDB/obtener_ventas.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -689,7 +689,7 @@ TextView total;
         llenarVentas(1, "", "");
     }
     public void obtenerGanancias(int op, String limiteIn, String limiteS){
-        String URL = "http://192.168.0.16/LicoreriaDB/obtener_ganancias.php";
+        String URL = "http://localhost/LicoreriaDB/obtener_ganancias.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -727,7 +727,7 @@ TextView total;
 
 //    consultas crud
     public void cambiarEstadoProductos(int id, String estado, int cantidad){
-        String URL = "http://192.168.0.16/LicoreriaDB/desactivar_producto.php";
+        String URL = "http://localhost/LicoreriaDB/desactivar_producto.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -757,7 +757,7 @@ TextView total;
         request.add(rq);
     }
     public void eliminarProveedor(String Ecedula){
-        String URL = "http://192.168.0.16/LicoreriaDB/eliminar_proveedor.php";
+        String URL = "http://localhost/LicoreriaDB/eliminar_proveedor.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -785,7 +785,7 @@ TextView total;
         request.add(rq);
     }
     public void eliminarVenta(int idV){
-        String URL = "http://192.168.0.16/LicoreriaDB/eliminar_venta.php";
+        String URL = "http://localhost/LicoreriaDB/eliminar_venta.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -815,7 +815,7 @@ TextView total;
         request.add(rq);
     }
     public void modificarProductos(int id, String producto, String descripcion, String proveedor, int cantidad, int precio, int tamaño, int alcoholGrados){
-        String URL = "http://192.168.0.16/LicoreriaDB/modificar_producto.php";
+        String URL = "http://localhost/LicoreriaDB/modificar_producto.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -851,7 +851,7 @@ TextView total;
         request.add(rq);
     }
     public void modificarProveedores(String Enombre, String Ecedula, String Etelefono){
-        String URL = "http://192.168.0.16/LicoreriaDB/modificar_proveedor.php";
+        String URL = "http://localhost/LicoreriaDB/modificar_proveedor.php";
         StringRequest rq = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
