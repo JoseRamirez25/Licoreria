@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="158dp"
+                android:layout_height="68dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/NombreP"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bordes_semiredondos"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/ProductName"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff787878" />
+
+                <EditText
+                    android:id="@+id/cant"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bordes_semiredondos"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/ProductCant"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff787878" />
+
+                <EditText
+                    android:id="@+id/precio"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bordes_semiredondos"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Precio"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff787878" />
+
+                <EditText
+                    android:id="@+id/tamaño"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bordes_semiredondos"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/ProductSize"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff787878" />
+
+                <EditText
+                    android:id="@+id/gradosAlcohol"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bordes_semiredondos"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/AlcoholPercentage"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff787878" />
+
+                <EditText
+                    android:id="@+id/Doc"
+                    android:layout_width="350dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bordes_semiredondos"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/ProductDescription"
+                    android:inputType="text|textMultiLine"
+                    android:paddingHorizontal="20sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#787878" />
+
+                <EditText
+                    android:id="@+id/proveedorID"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bordes_semiredondos"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Doc Proveedor"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#ff787878" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReg"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="14.5dp"
+                android:backgroundTint="#00bcd4"
+                android:text="@string/registro"
+                android:textColor="@color/white"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

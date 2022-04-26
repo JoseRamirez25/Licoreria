@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="156dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="50dp">
+
+                <Spinner
+                    android:id="@+id/optionList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="156dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:id="@+id/verTotal"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/editTextsearch"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:ems="10"
+
+                    android:gravity="center"
+                    android:hint="🔍 Search"
+                    android:inputType="textPersonName"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelSearch"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:text="✖"
+                android:textColor="@color/black"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutInventario"
+            android:layout_width="365dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp">
+
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Titleproducto"
+                        android:layout_width="225dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/design_default_color_primary"
+                        android:gravity="center"
+                        android:text="Producto"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Titlecantidad"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/design_default_color_primary"
+                        android:gravity="center"
+                        android:text="Cantidad"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/Titleprecio"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/design_default_color_primary"
+                        android:gravity="center"
+                        android:text="Precio"
+                        android:textColor="@color/white" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutProveedores"
+            android:layout_width="365dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="59dp">
+
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Titlenombre"
+                        android:layout_width="365dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/design_default_color_primary"
+                        android:gravity="center"
+                        android:text="Nombre"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewProveedores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerProveedores"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/filtroFecha"
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/fechaInputMin"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:hint="Desde"
+                        android:inputType="text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="5dp"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textSize="50sp" />
+
+                    <EditText
+                        android:id="@+id/fechaInputMax"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:hint="Hasta"
+                        android:inputType="text"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/searchFechas"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/white"
+                        android:text="🔍"
+                        app:cornerRadius="20dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addOp"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/teal_200"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:padding="2dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                app:cornerRadius="100dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

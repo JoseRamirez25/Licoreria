@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewProducto"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Producto" />
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName" />
+
+        <TableLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TableRow
+                android:layout_width="340dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewCantidad"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad" />
+
+                <TextView
+                    android:id="@+id/textViewPrecio"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:text="Precio/U" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="340dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNumberCantidad"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editTextNumberPrecio"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="340dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewTamaño"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tamaño" />
+
+                <TextView
+                    android:id="@+id/textViewGrados_alcohol"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Grados de alcohol" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="340dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNumberSize"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editTextNumberAlcoholGrados"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/cantidadAVender"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Cantidad a vender"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/total"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="TOTAL"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:inputType="number" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnVender"
+                android:layout_width="90dp"
+                android:layout_height="40sp"
+                android:backgroundTint="@color/white"
+                android:text="Vender"
+                android:enabled="false"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="110dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="140dp"
+                android:backgroundTint="@color/white"
+                android:text="Cancelar"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewProducto"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Producto" />
+
+        <EditText
+            android:id="@+id/editTextProductoV"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewFechaV"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Fecha de venta" />
+
+        <EditText
+            android:id="@+id/editTextFechaV"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:enabled="false"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="date" />
+
+        <TableLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TableRow
+                android:layout_width="340dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewCantidad"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad" />
+
+                <TextView
+                    android:id="@+id/textViewPrecio"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:text="Precio/U" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="340dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNumberCantidadV"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editTextNumberPrecioV"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+            </TableRow>
+
+        </TableLayout>
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TOTAL"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTotalV"
+                android:layout_marginLeft="20dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="number" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmV"
+            app:cornerRadius="100dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:text="✔"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDelV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Eliminar" />
+
+            <Button
+                android:id="@+id/btnCloseV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cerrar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
